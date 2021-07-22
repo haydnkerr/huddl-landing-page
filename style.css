@@ -1,0 +1,139 @@
+/* universal themes */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./images/bg-mobile.svg");
+    background-color: hsl(257, 40%, 49%);
+    background-position-y: -100px;
+    padding: 30px;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+/* header */
+
+header {
+    width: 100%; 
+    margin-bottom: 50px; 
+}
+
+header img {
+    width: 120px;
+    height: auto;
+}
+
+/* app mockup */
+
+.app img {
+    width: 100%;
+    height: auto;
+}
+
+/* info */
+
+.info {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+
+h1, p {
+    color: white;
+}
+
+h1 {
+    line-height: 45px;
+    font-family: "Poppins";
+}
+
+p {
+    margin: 20px 0;
+    line-height: 30px;
+    font-family: "Open sans";
+    font-size: 20px;
+}
+
+.button {
+    background-color: white;
+    border-radius: 50px;
+    color:hsl(257, 40%, 49%);
+    width: 170px;
+    height: 40px;
+    border:transparent;
+    box-shadow: 1px 9px 30px -5px rgba(37, 36, 36, 0.5);
+    font-family:;
+    font-size: 14px;
+}
+
+.button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+
+
+/* footer */
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    margin-top: 20px;
+}
+
+.icons img {
+    width: 30px;
+    height: auto;
+    margin: 30px;
+}
+
+.icons img:hover {
+    cursor: pointer;
+    padding: 2px;
+    border-bottom: 1px solid white;
+
+}
+
+
+@media (min-width: 700px) {
+    body {
+        background-image: url("./images/bg-desktop.svg");
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .info {
+        width: 40%;
+        text-align: left;
+        margin: 30px 0px 0px 40px;
+    }
+
+    .app {
+        width: 50%;
+    }
+
+    .icons {
+        justify-content: flex-end;
+        margin-top: 0px;
+    }
+
+
+
+    
